@@ -4,7 +4,7 @@ RSpec.describe 'foods/new', type: :view do
   before(:each) do
     assign(:food, Food.new(
                     name: 'MyString',
-                    measurent_unit: 'MyString',
+                    measurement_unit: 'MyString',
                     price: '9.99',
                     quantity: 1,
                     user_id: 1
@@ -17,7 +17,7 @@ RSpec.describe 'foods/new', type: :view do
     assert_select 'form[action=?][method=?]', foods_path, 'post' do
       assert_select 'input[name=?]', 'food[name]'
 
-      assert_select 'input[name=?]', 'food[measurent_unit]'
+      assert_select 'input[name=?]', 'food[measurement_unit]'
 
       assert_select 'input[name=?]', 'food[price]'
 
