@@ -5,14 +5,14 @@ RSpec.describe 'foods/index', type: :view do
     assign(:foods, [
              Food.create!(
                name: 'Name',
-               measurent_unit: 'Measurent Unit',
+               measurement_unit: 'Measurent Unit',
                price: '9.99',
                quantity: 2,
                user_id: 3
              ),
              Food.create!(
                name: 'Name',
-               measurent_unit: 'Measurent Unit',
+               measurement_unit: 'Measurent Unit',
                price: '9.99',
                quantity: 2,
                user_id: 3
