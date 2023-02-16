@@ -1,13 +1,21 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Recipes</h1>
-
 <div id="recipes">
   <% @recipes.each do |recipe| %>
-    <%= render recipe %>
-    <p>
-      <%= link_to "Show this recipe", recipe %>
-    </p>
+    <div id=recipe>
+      <p>
+        <%= recipe.name %>
+      </p>
+
+      <p>
+        <strong>Description:</strong>
+        <%= recipe.description %>
+      </p>
+
+      <%= button_to "Destroy this recipe", recipe, method: :delete %>
+
+      <p>
+        <%= link_to "Recipe details", recipe %>
+      </p>
+    </div>
   <% end %>
 </div>
 

@@ -1,0 +1,16 @@
+#recipes {
+  background-color: azure;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#recipes div {
+  border: 2px solid silver;
+}
+
+.name {
+  background-color: red;
+}
