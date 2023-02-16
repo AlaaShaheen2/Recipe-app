@@ -4,7 +4,7 @@ RSpec.describe 'foods/show', type: :view do
   before(:each) do
     assign(:food, Food.create!(
                     name: 'Name',
-                    measurent_unit: 'Measurent Unit',
+                    measurement_unit: 'Measurent Unit',
                     price: '9.99',
                     quantity: 2,
                     user_id: 3
