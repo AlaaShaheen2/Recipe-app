@@ -11,6 +11,14 @@
   </head>
 
   <body>
+    <header>
+    <ul>
+    <li> <%= link_to "Recipes", recipes_path  %></li>
+    <li> <%= link_to "Foods", foods_path  %></li>
+    <%= button_to "Sign Out", destroy_user_session_path, method: :delete%>
+    </ul>
+    </header>
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
