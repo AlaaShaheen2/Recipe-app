@@ -1,5 +1,5 @@
 #recipes {
-  background-color:azure;
+  background-color: azure;
   max-width: 80%;
   display: flex;
   flex-direction: column;
@@ -14,4 +14,3 @@
 .name {
   background-color: red;
 }
-
