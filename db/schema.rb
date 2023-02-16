@@ -18,7 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_16_055850) do
     t.string "name"
     t.string "measurement_unit"
     t.decimal "price"
-    t.string "quantity"
+    t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -26,7 +26,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_16_055850) do
   end
 
   create_table "recipe_foods", force: :cascade do |t|
-    t.string "quantity"
+    t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "food_id"

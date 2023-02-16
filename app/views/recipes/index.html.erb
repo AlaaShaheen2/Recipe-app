@@ -1,8 +1,9 @@
 <div id="recipes">
+<%= link_to "New recipe", new_recipe_path %>
   <% @recipes.each do |recipe| %>
     <div id=recipe>
       <p>
-        <%= recipe.name %>
+        Name :<%= recipe.name %>
       </p>
 
       <p>
@@ -18,5 +19,3 @@
     </div>
   <% end %>
 </div>
-
-<%= link_to "New recipe", new_recipe_path %>

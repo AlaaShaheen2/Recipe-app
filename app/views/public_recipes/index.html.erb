@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+  
+
+<h1>Public Recipes</h1>
+
+ <% @public_recipes.each do |public_recipes| %>
+   <% if public_recipes.public == true %>
+   <div class="public_recipe">
+     <h3> Name<%= public_recipes.name %></h3>
+     <h4>By User:<%= public_recipes.user_id%></h4>
+    
+    <%= @food_recipes.each do |food_recipes| %>
+      <% if food_recipes.id == public_recipes.id %>
+        <h4>Total Price :<%=food_recipes.price * food_recipes.quantity %></h4>
+        <%end%>
+      <%end%>
+
+
+     <h4>Total Foods Item :<%=%></h4>
+   </div>
+     <%end%>
+  <% end %>
