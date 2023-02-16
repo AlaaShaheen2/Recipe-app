@@ -54,7 +54,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Coming soon!
+> Coming soon!.
 <!--
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 -->

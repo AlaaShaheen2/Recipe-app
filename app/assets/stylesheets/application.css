@@ -1,15 +1,69 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.foods-index {
+  display: flex;
+  flex-direction: column;
+}
+
+.foods_newButton {
+  background-color: aqua;
+  align-self: flex-end;
+  width: auto;
+}
+
+table {
+  border: 3px solid black;
+  padding-right: 9px;
+  text-align: center;
+  margin-left: 18%;
+}
+
+.show-food {
+  border: 1px solid black;
+}
+
+tr {
+  border: 1px solid rgb(0, 0, 0);
+  margin-left: 150px;
+}
+
+td {
+  border: 1px solid rgb(207, 36, 36);
+  width: 200px;
+  height: 60px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 15px;
+  margin-right: 10%;
+  background-color: chartreuse;
+}
+
+.recipes {
+  margin-left: 50px;
+  margin-right: 50px;
+  list-style-type: none;
+}
+
+.foods {
+  margin-left: 50px;
+  margin-right: 75%;
+}
+
+.title-foods {
+  margin-left: 10%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button-new-food {
+  margin-right: 15%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: chartreuse;
+}
