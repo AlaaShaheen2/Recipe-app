@@ -8,12 +8,12 @@
   align-self: flex-end;
   width: auto;
 }
- 
+
 table {
   border: 3px solid black;
   padding-right: 9px;
   text-align: center;
-  margin-left: 6%;
+  margin-left: 18%;
 }
 
 .show-food {
@@ -34,10 +34,10 @@ td {
 .header {
   display: flex;
   flex-direction: row;
-  text-decoration: none;
   list-style-type: none;
   padding: 15px;
   margin-right: 10%;
+  background-color: chartreuse;
 }
 
 .recipes {
@@ -58,4 +58,12 @@ td {
 
 .button-new-food {
   margin-right: 15%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: chartreuse;
 }
