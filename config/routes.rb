@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :users
   get "/general_shopping_list", to: "recipes#generate_shopping", as: :generate_shopping
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :public_recipes
 
   # Defines the root path route ("/")
   # root "articles#index"

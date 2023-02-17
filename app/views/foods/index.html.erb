@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1 class='title-foods'>Foods List</h1>
+<h1 class='title-foods'>Foods List DESPENSA</h1>
 
 <div class='button-new-food'>
   <%= link_to "New food", new_food_path %>
@@ -9,7 +9,7 @@
 <div id="foods_table">
   <table>
     <tr>
-      <td><strong>Name</strong></td>
+      <th><%= link_to "Name", :sort => "name" %></th>
       <br>
       <td><strong>Measurement Unit</strong></td>
       <br>
