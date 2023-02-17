@@ -1,20 +1,24 @@
 <div>
-  <h1>Shopping List</h1>
-  <table>
-    <tr>
-      <th>Food</th>
-      <th>Quantity</th>
-      <th>Price</th>
-    </tr>
-    <h2>amought of items to buy: <%= @recipefoods.length%></h2>
-    <h3>total value of food needed it: <%= @recipefoods.sum {
-        |recipefood| (recipefood.quantity - recipefood.food.quantity) * recipefood.food.price } %></h3>
+  <h1 class='title-shopping'>Shopping List</h1>
+<table>
+  <tr>
+    <th>Food</th>
+    <th>Quantity</th>
+    <th>Price</th>
+  </tr>
+  <div class='container-amount-total'>
+    <h2 class='amount-shopping'>Amount of items to buy: <%= @recipefoods.present? ? @recipefoods.length : 0 %></h2>
+    <h2>Total value of food needed: <%= @recipefoods.present? ? @recipefoods.sum { |recipefood| (recipefood.quantity - recipefood.food.quantity) * recipefood.food.price } : 0 %></h2>
+  </div>
+  <% if @recipefoods.present? %>
     <% @recipefoods.each do |foods| %>
-    <tr>
-        <td class="p-4"><%= foods.food.name %></td>
-        <td class="p-4"><%= foods.quantity - foods.food.quantity %></td>
-        <td class="p-4"><%= foods.food.price * (foods.quantity - foods.food.quantity) %></td>
-    </tr>
+      <tr class='table'>
+        <td><%= foods.food.name %></td>
+        <td><%= foods.quantity - foods.food.quantity %></td>
+        <td><%= foods.food.price * (foods.quantity - foods.food.quantity) %></td>
+      </tr>
     <% end %>
-  </table>
+  <% end %>
+</table>
+
 </div>

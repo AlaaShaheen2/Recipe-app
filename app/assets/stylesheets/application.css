@@ -9,8 +9,8 @@
   width: auto;
 }
 
-table {
-  border: 3px solid black;
+.table-foods {
+  border: 3px solid rgb(10, 90, 0);
   padding-right: 9px;
   text-align: center;
   margin-left: 18%;
@@ -112,6 +112,22 @@ a:hover {
 }
 
 .Byuser-public {
+  margin-right: 65px;
+  margin-left: 20%;
+}
+
+.title-shopping {
+  margin-left: 40%;
+}
+
+.container-amount-total {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.amount-shopping {
   margin-right: 65px;
   margin-left: 20%;
 }
