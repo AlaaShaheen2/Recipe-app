@@ -2,11 +2,9 @@
 
 <div align="center">
 
-  <h3><b>BLOG APP MADE WITH RAILS!</b></h3>
+  <h3><b>RECIPE APP MADE WITH RAILS!</b></h3>
 
 </div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -29,11 +27,10 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 [Blog App] <a name="about-project"></a>
 
-**[Blog App]** is a Blog App made with Ruby on Rails.
+**[Recipe App]** is a Recipe App made with Ruby on Rails.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -50,17 +47,14 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Coming soon!.
-<!--
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
--->
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -81,7 +75,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-https://github.com/luccamicale/Recipes
+https://github.com/AlaaShaheen2/Recipe-app.git
 
 ### Installation
 Install this project with:
@@ -110,7 +104,6 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -130,7 +123,6 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
@@ -148,8 +140,6 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 NO CONTRIBUTIONS! 
@@ -157,7 +147,6 @@ feature requests are welcome!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -165,17 +154,12 @@ If you like this project GIVE ME A STAR!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank NOBODY, YET.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 

@@ -2,20 +2,18 @@
 <%= link_to "New recipe", new_recipe_path %>
   <% @recipes.each do |recipe| %>
     <div id=recipe>
-      <p>
-        Name :<%= recipe.name %>
-      </p>
+      <div class='container-name'>
+        <p class='name-recipe'>Name :<%= recipe.name %></p>
+        <%= button_to "Remove Recipe", recipe, method: :delete %>
+      </div>
 
-      <p>
+      <div class='container-descrip'>
         <strong>Description:</strong>
         <%= recipe.description %>
-      </p>
-
-      <%= button_to "Destroy this recipe", recipe, method: :delete %>
-
-      <p>
+      </div>
+      <div class='recipe-details'>
         <%= link_to "Recipe details", recipe %>
-      </p>
+      </div>
     </div>
   <% end %>
 </div>
