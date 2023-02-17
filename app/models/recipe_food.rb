@@ -1,6 +1,6 @@
 class RecipeFood < ApplicationRecord
-  belongs_to :food, dependent: :delete_all
-  belongs_to :recipe, dependent: :delete_all
+  belongs_to :food
+  belongs_to :recipe
 
   validates :quantity, presence: true
 end
