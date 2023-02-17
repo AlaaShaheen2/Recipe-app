@@ -111,12 +111,12 @@ a:hover {
 }
 
 .name-public {
-  margin-right: 65px;
+  margin-right: 20%;
   margin-left: 20%;
 }
 
 .Byuser-public {
-  margin-right: 65px;
+  margin-right: 20%;
   margin-left: 20%;
 }
 
@@ -134,4 +134,11 @@ a:hover {
 .amount-shopping {
   margin-right: 65px;
   margin-left: 20%;
+}
+
+.table-shopping {
+  margin-left: 25%;
+  margin-top: 5%;
+  text-align: center;
+  border: 2px solid black;
 }
