@@ -1,17 +1,20 @@
 <p style="color: green"><%= notice %></p>
   
-<h1>Public Recipes</h1>
-
+<h1 class='title-public'>Public Recipes</h1>
+<div class='main-public'>
  <% @public_recipes.each do |public_recipes| %>
    <% if public_recipes.public == true %>
-   <div class="public_recipe">
-     <h3> Name<%= public_recipes.name %></h3>
-     <h4>By User:<%= public_recipes.user_id%></h4>
+   <div class='container'>
+    <div class="public_recipe-name-user">
+     <h3 class='name-public'> Name<%= public_recipes.name %></h3>
      <h4> Total food Items: <%=public_recipes.recipe_foods.length%></h4>
-     
-     <%sum=public_recipes.recipe_foods.reduce(0) { |sum, recipe_food| sum + recipe_food.food.price.to_s.to_d*recipe_food.quantity.to_s.to_d }%>
-
-    <h4>Total price:<%=sum%></h4>
+   </div>
+   <div class='public_recipe-total-price'>
+      <h4 class='Byuser-public'>By User:<%= public_recipes.user_id%></h4>
+      <%sum=public_recipes.recipe_foods.reduce(0) { |sum, recipe_food| sum + recipe_food.food.price.to_s.to_d*recipe_food.quantity.to_s.to_d }%>
+      <h4>Total price:<%=sum%></h4>
+   </div>
    </div>
      <%end%>
   <% end %>
+</div>

@@ -80,3 +80,38 @@ a:hover {
   padding-right: 5%;
   font-size: 20px;
 }
+
+.main-public {
+  display: flex;
+  flex-direction: column;
+}
+
+.public_recipe-name-user {
+  display: flex;
+  flex-direction: row;
+}
+
+.public_recipe-total-price {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  border: 1px solid black;
+  width: 90%;
+  margin-top: 3%;
+}
+
+.title-public {
+  margin-left: 18%;
+}
+
+.name-public {
+  margin-right: 65px;
+  margin-left: 20%;
+}
+
+.Byuser-public {
+  margin-right: 65px;
+  margin-left: 20%;
+}
