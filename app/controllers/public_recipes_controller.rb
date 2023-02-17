@@ -1,6 +1,6 @@
 class PublicRecipesController < ApplicationController
   def index
     @public_recipes = Recipe.all
-    @food_recipes = Food.all
+    @recipes_foods = RecipeFood.all
   end
 end

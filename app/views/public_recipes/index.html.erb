@@ -9,14 +9,8 @@
      <h3> Name<%= public_recipes.name %></h3>
      <h4>By User:<%= public_recipes.user_id%></h4>
     
-    <%= @food_recipes.each do |food_recipes| %>
-      <% if food_recipes.id == public_recipes.id %>
-        <h4>Total Price :<%=food_recipes.price * food_recipes.quantity %></h4>
-        <%end%>
-      <%end%>
-
-
-     <h4>Total Foods Item :<%=%></h4>
+     <h4> Total Items: <%= @recipes_foods.where(recipe_id: public_recipes.id).count %> </h4>
+     <h4>Total Price :<%=%></h4>
    </div>
      <%end%>
   <% end %>
