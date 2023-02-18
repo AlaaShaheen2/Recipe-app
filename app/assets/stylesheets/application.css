@@ -1,23 +1,87 @@
-.foods-index {
-  display: flex;
-  flex-direction: column;
+:root {
+  --blue: #3E54AC;
+  --dark: #332C39;
+  --white: #F0EEED;
+  --red: #C92C6D;
 }
 
-.foods_newButton {
-  background-color: aqua;
-  align-self: flex-end;
-  width: auto;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: var(--white);
+  font-size: 1.4rem;
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* header */
+header {
+  width: 100%;
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 15px;
+  background-color: var(--dark);
+}
+
+.nav-list {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sign-out {
+  background-color: var(--blue);
+  padding: 5px;
+  border-radius: 8%;
+  margin-left: 35em;
 }
 
 .table-foods {
-  border: 3px solid rgb(10, 90, 0);
+  border: 3px solid var(--dark);
   padding-right: 9px;
   text-align: center;
-  margin-left: 18%;
-}
-
-.show-food {
-  border: 1px solid black;
+  margin: auto;
 }
 
 tr {
@@ -29,15 +93,6 @@ td {
   border: 1px solid rgb(207, 36, 36);
   width: 200px;
   height: 60px;
-}
-
-.header {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  padding: 15px;
-  margin-right: 10%;
-  background-color: chartreuse;
 }
 
 .recipes {
