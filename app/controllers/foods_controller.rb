@@ -1,5 +1,6 @@
 class FoodsController < ApplicationController
   before_action :set_food, only: %i[show edit update destroy]
+  before_action :find_user
 
   # GET /foods or /foods.json
   def index
@@ -20,6 +21,7 @@ class FoodsController < ApplicationController
   # POST /foods or /foods.json
   def create
     @food = Food.new(food_params)
+    @food.user = @user
 
     respond_to do |format|
       if @food.save
@@ -56,6 +58,10 @@ class FoodsController < ApplicationController
   end
 
   private
+
+  def find_user
+    @user = current_user
+  end
 
   # Use callbacks to share common setup or constraints between actions.
   def set_food
