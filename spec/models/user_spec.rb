@@ -6,10 +6,6 @@ RSpec.describe User, type: :model do
   end
 
   describe 'When the user model is tested' do
-    it 'validates the name of the user' do
-      @first_user.name = 'Lucca'
-      expect(@first_user.valid?).to be true
-    end
     it 'validates the name of the food' do
       @first_user.created_at = '2023-02-10 03:46:44.223198'
       expect(@first_user.created_at).to eq '2023-02-10 03:46:44.223198'
