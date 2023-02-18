@@ -9,6 +9,9 @@ gem 'rails', '~> 7.0.4', '>= 7.0.4.2'
 # authentication
 gem 'devise'
 
+# authorization
+gem 'cancancan'
+
 # rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
 
