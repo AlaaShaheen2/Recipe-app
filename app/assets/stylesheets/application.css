@@ -101,8 +101,29 @@ header {
 
 .add-food-btn {
   position: absolute;
-  left: 45%;
+  left: 47%;
   margin-top: 2em;
+}
+
+.form {
+  max-width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  width: 20em;
+  height: 2em;
+}
+
+.add-btn-form input {
+  color: var(--white);
+  background-color: var(--dark);
+  outline: none;
+  border: none;
 }
 
 .table-foods {
