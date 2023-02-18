@@ -1,19 +1,24 @@
 <div id="<%= dom_id food %>">
   <tr>
     <td>
-      <strong><%= food.name %></strong>
+      <strong>Name:</strong>
+      <%= food.name %>
     </td>
 
     <td>
-      <strong><%= food.measurement_unit %></strong>
+      <strong>Measurement unit:</strong>
+      <%= food.measurement_unit %>
     </td>
 
     <td>
-      <strong><%= food.price %></strong>
+      <strong>Price:</strong>
+      <%= food.price %>
     </td>
 
+
     <td>
-      <%= button_to "Delete", food, method: :delete %>
+      <strong></strong>
+      <%= button_to "Destroy this food", food, method: :delete %>
     </td>
   <tr>
 </div>
