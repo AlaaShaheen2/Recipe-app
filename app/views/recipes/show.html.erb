@@ -1,0 +1,12 @@
+<div class=container>
+  <p style="color: green"><%= notice %></p>
+  <div class="recipe-detail">
+    <%= render @recipe %>
+  </div>
+  <div class="act-btns">
+    <button type="button" class="edit-btn btn"><%= link_to "Edit", edit_recipe_path(@recipe) %></button>
+    <button type="button" class="back-btn btn"><%= link_to "Back", recipes_path %></button>
+    <button type="button" class="gen-btn btn"><%= link_to "Generate Shopping List", generate_shopping_path(id:@recipe)  %></button>
+    <button type="button" class="add-btn btn"><%= link_to "Add Ingredient", new_recipe_food_path %></button>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+  <h1 class='title'>Foods List</h1>
+
+  <div id="foods_table">
+    <table class='table-foods'>
+      <tr>
+        <th><%= link_to "Name", :sort => "name" %></th>
+        <br>
+        <td><strong>Measurement Unit</strong></td>
+        <br>
+        <td><strong>Price</strong></td>
+        <br>
+        <br>
+        <td><strong>Actions</strong>
+        <br>
+      </tr>  
+      
+    <% @foods.each do |food| %>
+      <%= render food %>
+    <% end %>
+    </table>
+  </div>
+  <button type="button" class="add-btn add-food-btn btn"><%= link_to "Add Food", new_food_path %></button>
+</div>
