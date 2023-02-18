@@ -131,6 +131,18 @@ header {
   text-align: center;
   margin: auto;
 }
+.act-btns{
+  margin-top: 2%;
+}
+
+.public{
+  background-color: var(--red);
+  padding: 5px;
+}
+
+.main-recipe-details {
+  margin: auto;
+}
 
 tr {
   border: 1px solid var(--dark);
