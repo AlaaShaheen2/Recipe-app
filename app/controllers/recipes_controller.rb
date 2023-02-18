@@ -1,4 +1,5 @@
 class RecipesController < ApplicationController
+  load_and_authorize_resource
   before_action :set_recipe, only: %i[show edit update destroy]
 
   # GET /recipes or /recipes.json
@@ -48,6 +49,9 @@ class RecipesController < ApplicationController
 
   # DELETE /recipes/1 or /recipes/1.json
   def destroy
+    @recipe_foods = RecipeFood.where(recipe_id: @recipe.id)
+    @recipe_foods.each(&:destroy)
+
     @recipe.destroy
 
     respond_to do |format|
