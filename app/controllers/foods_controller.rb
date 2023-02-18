@@ -1,10 +1,13 @@
 class FoodsController < ApplicationController
+  load_and_authorize_resource
+
   before_action :set_food, only: %i[show edit update destroy]
   before_action :find_user
 
   # GET /foods or /foods.json
   def index
-    @foods = Food.all
+    # @foods = Food.all 
+    @foods = @user.foods.all
   end
 
   # GET /foods/1 or /foods/1.json
