@@ -1,8 +1,8 @@
 :root {
-  --blue: #3E54AC;
-  --dark: #332C39;
-  --white: #F0EEED;
-  --red: #C92C6D;
+  --blue: #3e54ac;
+  --dark: #332c39;
+  --white: #f0eeed;
+  --red: #c92c6d;
 }
 
 html {
@@ -131,17 +131,14 @@ header {
   text-align: center;
   margin: auto;
 }
-.act-btns{
+
+.act-btns {
   margin-top: 2%;
 }
 
-.public{
+.public {
   background-color: var(--red);
   padding: 5px;
-}
-
-.main-recipe-details {
-  margin: auto;
 }
 
 tr {
@@ -164,6 +161,7 @@ td {
   border: 2px solid black;
   width: 90%;
   text-align: center;
+  margin: auto;
   margin-top: 5%;
 }
 
